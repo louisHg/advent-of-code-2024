@@ -23,6 +23,7 @@ public class Main {
         List<Integer> rightList = new ArrayList<>();
 
         while ((st = br.readLine()) != null) {
+            // we split into characters even if there's more than 1 character of space
             String[] parts = st.split("\\s+");
 
             leftList.add(Integer.parseInt(parts[0]));
@@ -30,8 +31,8 @@ public class Main {
         }
 
         br.close();
-
-        // Sort both lists
+        
+        // Sort both lists (By default sorting by ascending order)
         Collections.sort(leftList);
         Collections.sort(rightList);
 
